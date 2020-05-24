@@ -3,3 +3,4 @@
 
 add_executable(WindowClient windows/client.c windows/client.h)
 target_include_directories(WindowClient PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/windows)
+target_link_libraries(WindowClient PRIVATE WindowManager)
